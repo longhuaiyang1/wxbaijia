@@ -1,0 +1,65 @@
+
+.empty-layout{
+  height: 450rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: auto;
+}
+
+.icon_empty{
+  width: 400rpx;
+  height: 400rpx;
+}
+ 
+.empty-desc{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.btn-go-shopping{
+  color: darkcyan;
+  border-style: solid;
+  border-color: darkcyan;
+  border-width: 1rpx;
+  border-radius: 100rpx;
+
+  width: 400rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+
+
+.cart{
+  height: 10vh;
+  position: fixed;
+left: 0;
+right: 0; 
+bottom: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .totalall{
+  flex: 1;
+  text-align: right;
+  margin-right: 20rpx;
+}
+.cart .totalall text{
+  font-size: 40rpx;
+  color: orange;
+}
+.cart .cart-btn{
+  margin-right: 0;
+  width: 200rpx;
+  height: 100%;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 10vh;
+  color: white;
+  background-color: #23a3ff;
+}

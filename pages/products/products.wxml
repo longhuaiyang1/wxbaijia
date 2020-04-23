@@ -1,0 +1,20 @@
+<view>
+  <!-- 商品列表 -->
+  <view class="products-list-bd">
+    <block wx:for="{{productsArray}}" wx:key="index">
+      <view class="product-item">
+        <image class="product-img" src="{{item.img}}" />
+        <view class="product-desc">
+          <text>{{item.title}}</text>
+          <text class="price">￥{{item.price}}/斤</text>
+          <view class="product-desc-bottom">
+            <view class="next-day">次日送达</view>
+            <view class="add-del-product">
+              <image src="../../img/icon_add.png" bindtap="onAddProductToMyCart" data-id="{{item.goodsId}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="top-header">
+    <!-- <image class="img-header" src="{{userInfo.avatarUrl}}" />
+    <text class="text-name" bin>点此登录{{userInfo.nickName}}</text> -->
+    <view class="img-header">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data class="text-name" type="userNickName"></open-data>
+  </view>
+  <!-- 订单相关 -->
+  <view class="order-group">
+    <view class="order-head">
+      <text class="order-head-left">我的订单</text>
+      <text class="order-head-right">查看全部></text>
+    </view>
+    <view class="order-item-list">
+      <view class="order-item">
+        <image src="../../img/icon_order_wait_pay.png" />
+        <text>待支付</text>
+      </view>
+      <view class="order-item">
+        <image src="../../img/icon_order_wait_receive.png" />
+        <text>待收货</text>
+      </view>
+      <view class="order-item">
+        <image src="../../img/icon_order_finish.png" />
+        <text>已完成</text>
+      </view>
+      <view class="order-item">
+        <image src="../../img/icon_order_cancle.png" />
+        <text>已取消</text>
+      </view>
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-item">
+      <text>提货地址</text>
+      <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+    </view>
+    <view class="line"></view>
+    <view class="card-item">
+      <text>联系客服</text>
+      <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+    </view>
+  </view>
+  <view>
+    <image src="" />
+  </view>
+</view>

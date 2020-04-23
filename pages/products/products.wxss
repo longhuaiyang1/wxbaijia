@@ -1,0 +1,70 @@
+.products-list-bd{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60rpx;
+  align-items: center;
+  background-color: white;
+}
+.product-img{
+   width:200rpx;
+   height: 200rpx;
+}
+
+.product-desc{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.price{
+  color: red;
+}
+
+
+.product-desc-bottom{
+  width: 520rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.next-day{
+  color:red;
+  text-align: center;
+  
+  padding-bottom: 4rpx;
+  padding-top: 4rpx;
+  border-radius: 5rpx;
+  border-color: red;
+  border-width: 1rpx;
+  border-style: solid;
+  font-size: x-small;
+}
+
+
+.add-del-product{
+   margin-left: auto;
+   position: relative;
+}
+
+.add-del-product image{
+  width: 60rpx; 
+  height: 60rpx; 
+  margin-right: 20rpx;
+  display: block
+  
+}
+
+.add-del-product mp-badge{
+  position: absolute;
+  top: -20rpx;
+  right: -0rpx;
+}

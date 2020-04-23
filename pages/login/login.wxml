@@ -1,0 +1,14 @@
+<!-- pages/login/login.wxml -->
+<view style='height:322rpx;background-color:#fff;border-top:1rpx solid #ccc;padding-top:100rpx;'>
+  <view style='width:100rpx;height:100rpx;text-align:center;margin:0 auto'>
+    <open-data type="userAvatarUrl" style></open-data>
+  </view>
+  <view style='width:100%;height:50rpx;text-align:center;font-size:34rpx;color:#333333;'>
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<view class='wxlogin'>
+  <button type="primary" bindtap="dWxLogin">微信登录</button>
+  <button bindtap="bindNotLogin" style="margin-top: 40rpx;background-color: #666666">暂不登录</button>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">手机号登录</button>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/classify/classify.wxml-->
+<view >
+      <!-- 首页导航 -->
+    <view class="myswiper">
+        <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-color="white">
+            <block wx:for="{{imgUrls}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"  />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <!-- 分类信息 -->
+    <view class="classify-bd">
+        <block wx:for="{{classify}}" wx:key = "index">
+        
+            <navigator class="classify-bd__class"  url= "../log/log?where={{item.where}}">
+            <image class="classify-bd__class__img" src="{{item.url}}"/>
+            <view class="classify-bd__class__items">
+            {{item.class}}
+            </view>
+        </navigator>
+        </block>
+    </view>
+</view>

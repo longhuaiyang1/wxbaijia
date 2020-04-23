@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/products/products",
+    "pages/mycart/mycart",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#339933",
+    "navigationBarTitleText": "白家团",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a1a1a1",
+    "selectedColor": "#339933",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./img/icon_home_unselected.png",
+        "selectedIconPath": "./img/icon_home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "iconPath": "./img/icon_products_unselected.png",
+        "selectedIconPath": "./img/icon_products_selected.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/mycart/mycart",
+        "iconPath": "./img/icon_mycart_unselected.png",
+        "selectedIconPath": "./img/icon_mycart_selected.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "./img/icon_user_unselected.png",
+        "selectedIconPath": "./img/icon_user_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
