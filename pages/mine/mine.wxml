@@ -11,7 +11,10 @@
   <view class="order-group">
     <view class="order-head">
       <text class="order-head-left">我的订单</text>
-      <text class="order-head-right">查看全部></text>
+      <view class="order-head-right">
+        <text>查看全部</text>
+        <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+      </view>
     </view>
     <view class="order-item-list">
       <view class="order-item">
@@ -39,8 +42,8 @@
     </view>
     <view class="line"></view>
     <view class="card-item">
-      <text>联系客服</text>
-      <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+      <text>客服电话</text>
+      <view>18048576055</view>
     </view>
   </view>
   <view>

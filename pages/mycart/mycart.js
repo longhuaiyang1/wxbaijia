@@ -12,6 +12,12 @@ Page({
   },
   //options(Object)
   onLoad: function (options) {
+  },
+
+  /**
+    * 生命周期函数--监听页面显示
+    */
+  onShow: function () {
     let params = {
       session_key: wx.getStorageSync("session_key"),
     };
@@ -27,7 +33,6 @@ Page({
         title: '获取数据失败!',
       })
     });
-
   },
 
   onAddProductToMyCart: function (e) {
@@ -92,6 +97,14 @@ Page({
     });
   },
 
+  //跳转到购物商品列表页
+  onGotoShopping: function (e) {
+    wx.switchTab({
+      url: '/pages/products/products',
+    })
+  },
+
+
   // 购物车全选操作
   cartAllIn: function () {
     this.setData({
@@ -101,4 +114,13 @@ Page({
       cartTotalPrice: 0
     });
   },
+
+  /** tab点击 */
+  onTabItemTap (item) {
+    console.log(item)
+    // wx.showToast({
+    //   title: 'tab点击',
+    // })
+  }
+
 });

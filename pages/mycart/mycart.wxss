@@ -1,16 +1,15 @@
 /* 空布局 */
 .empty-layout{
-  height: 450rpx;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin: auto;
 }
 
 .icon_empty{
   width: 400rpx;
   height: 400rpx;
+  margin-top: auto;
 }
  
 .empty-desc{
@@ -28,6 +27,7 @@
   width: 400rpx;
   padding-top: 20rpx;
   padding-bottom: 20rpx;
+  margin-bottom: auto;
   text-align: center;
 }
 
