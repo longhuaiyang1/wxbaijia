@@ -5,9 +5,7 @@ Page({
   data: {
     productsArray: [],
 
-    cartAllIn: false,
-    cart: [],
-    cartTotal: 0,
+    //跟全选按钮有关
     cartTotalPrice: 0
   },
   //options(Object)
@@ -27,6 +25,7 @@ Page({
       that.setData({
         productsArray: res
       })
+      that.caculateCartTotal();
     }, function (err) {
       console.log("err：", err);
       wx.showToast({
@@ -52,6 +51,7 @@ Page({
             productsArray: res.data
           }
         )
+        that.caculateCartTotal();
       } else {
         wx.showToast({
           title: res.msg,
@@ -84,6 +84,7 @@ Page({
             productsArray: res.data
           }
         )
+        that.caculateCartTotal();
       } else {
         wx.showToast({
           title: res.msg,
@@ -104,23 +105,26 @@ Page({
     })
   },
 
-
-  // 购物车全选操作
-  cartAllIn: function () {
-    this.setData({
-      cartAllIn: true,
-      cart: this.data.cart,
-      cartTotal: 0,
-      cartTotalPrice: 0
-    });
-  },
-
   /** tab点击 */
   onTabItemTap (item) {
     console.log(item)
     // wx.showToast({
     //   title: 'tab点击',
     // })
+  },
+
+  caculateCartTotal: function () {
+    let that = this;
+    let v = 0;
+    let productsArray = that.data.productsArray;
+
+    for (let j = 0, len = productsArray.length; j < len; j++) {
+      let item = productsArray[j];
+      v = v + item.goods.price * item.shopCarCount;
+    }
+    that.setData({
+      cartTotalPrice: v
+    });
   }
 
 });

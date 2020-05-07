@@ -130,6 +130,12 @@ bottom: 0;
   font-size: 40rpx;
   color: orange;
 }
+
+.totalallDesc{
+  font-size: 30rpx;
+  color: red;
+}
+
 .cart .cart-btn{
   margin-right: 0;
   width: 200rpx;

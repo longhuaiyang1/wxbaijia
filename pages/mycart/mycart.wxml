@@ -30,15 +30,18 @@
     </view>
     <!-- 购物车信息 -->
     <view class="cart">
-      <view class="cart-allin" bindtap="cartAllIn">
+      <!-- <view class="cart-allin" bindtap="cartAllIn">
         <icon type="{{cartAllIn ? 'success' : 'circle'}}" color="blue" size="30"></icon>
         <text class="total">全选</text>
+      </view> -->
+      <view>
+        <view class="totalall">
+          预估费用：
+          <text>￥{{cartTotalPrice}}</text>
+        </view>
+        <view class="totalallDesc">(以实际收货重量为准)</view>
       </view>
-      <view class="totalall">
-        合计：
-        <text>￥{{cartTotalPrice}}</text>
-      </view>
-      <view class="cart-btn" bindtap="finishedOrder">去结算</view>
+      <view class="cart-btn" bindtap="finishedOrder">去下单</view>
     </view>
   </view>
 </view>
