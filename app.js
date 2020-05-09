@@ -63,10 +63,11 @@ App({
   globalData: {
     classifyList: {},  //商品列表
     userInfo: {},     //用户信息
-    carts: [],       //购物车信息
-    cartTotal: 0,     //购物车数量
-    cartTotalPrice: 0,  //购物车价值
-    cartAllIn: false,   //购物车是否全选
+
+    userName: "",//用户名
+    phone: "",//电话
+    homeAddress: "",//家庭住址
+    getProductAddress: ""//自提点
   },
   data: {
     serverUrl: "http://localhost:8085",
