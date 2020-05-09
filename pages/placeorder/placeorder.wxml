@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="setReceiveInfo">
+    <view class="setReceiveShopBtn">+请选择提货门店</view>
+    <view class="line"></view>
+    <view class="myInfoItem">
+      <text class="leftDesc">购买人</text>
+      <input class="rightDetailInfo" maxlength="10" placeholder="请输入姓名" />
+    </view>
+    <view class="myInfoItem">
+      <text class="leftDesc">手机号</text>
+      <input class="rightDetailInfo" maxlength="11" placeholder="请输入手机号" />
+    </view>
+  </view>
+  <!-- 商品列表 -->
+  <view class="products-list-bd">
+    <view class="timeLayout">
+      <text class="timeLayoutTextLeft">次日达</text>
+      <text class="timeLayoutTextRight">提货时间:{{receiveProductTime}}</text>
+    </view>
+    <view class="line1"></view>
+    <block wx:for="{{productsArray}}" wx:key="index">
+      <view class="product-item">
+        <image class="product-img" src="{{item.goods.img}}" />
+        <view class="product-desc">
+          <text>{{item.goods.title}}</text>
+          <view class="product-desc-bottom">
+            <text class="price">￥{{item.goods.price}}/斤</text>
+            <view class="add-del-product">
+              <text>约 {{item.shopCarCount}} 斤</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="payMethodLayout">
+    <view class="payMethodTitle">支付方式</view>
+    <view class="linearLayout">
+      <image src="../../img/icon_pay_after_receive.png" />
+      <view class="leftDesc">货到付款</view>
+      <icon class="icon-small" type="success" size="23"></icon>
+    </view>
+  </view>
+  <view class="payDesc">*实际付款按收货重量计算,与预估相差不大</view>
+  <view class="cart">
+    <view>
+      <view class="totalall">
+        预估费用：
+        <text>￥{{totalPrice}}</text>
+      </view>
+    </view>
+    <view class="cart-btn" bindtap="onGotoPlaceOrder">提交订单</view>
+  </view>
+</view>

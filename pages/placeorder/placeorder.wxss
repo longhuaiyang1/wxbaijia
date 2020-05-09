@@ -1,0 +1,244 @@
+.container{
+  padding-bottom: 160rpx;
+}
+
+/* 选择提货门店 */
+.setReceiveInfo{
+  width: 710rpx;
+  padding-top: 40rpx;
+  margin-top: 20rpx;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line{
+  height: 2rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: lightgray;
+}
+
+.setReceiveShopBtn{
+  width: 500rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: auto;
+  margin-right: auto;
+  border:lightgray;
+  border-width: 6rpx;
+  border-style: dotted;
+  text-align: center;
+}
+
+.myInfoItem{
+  display: flex;
+  flex-direction: row;
+  padding-left: 40rpx;
+  height:80rpx;
+}
+
+
+.myInfoItem .leftDesc{
+  width: 100rpx;
+}
+
+.myInfoItem .rightDetailInfo{
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: lightgray;
+  margin-left: 40rpx;
+  flex: 1;
+}
+
+
+
+
+/* 中间列表 */
+.products-list-bd{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 40rpx;
+}
+
+/* 商品收货时间 */
+.timeLayout{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeLayoutTextLeft{
+  padding-left:8rpx;
+  width: 160rpx;
+  font-size: larger;
+  font-weight: bold;
+}
+ 
+.timeLayoutTextRight{
+  margin-left: auto;
+  font-weight: bold;
+  padding-right: 8rpx;
+  color: gray;
+}
+
+.line1{
+  height: 2rpx;
+  background-color: lightgray;
+}
+
+.product-item{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 20rpx;
+  align-items: center;
+  background-color: white;
+}
+.product-img{
+   width:130rpx;
+   height: 130rpx;
+}
+
+.product-desc{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.price{
+  color: gray;
+}
+
+
+.product-desc-bottom{
+  width: 520rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.next-day{
+  color:red;
+  text-align: center;
+  
+  padding-bottom: 4rpx;
+  padding-top: 4rpx;
+  border-radius: 5rpx;
+  border-color: red;
+  border-width: 1rpx;
+  border-style: solid;
+  font-size: x-small;
+}
+
+
+.add-del-product{
+  display: flex;
+  flex-direction: row;
+   margin-left: auto;
+   position: relative;
+}
+
+.add-del-product image{
+  width: 60rpx; 
+  height: 60rpx; 
+  display: block
+}
+
+.add-del-product text{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.add-del-product mp-badge{
+  position: absolute;
+  top: -20rpx;
+  right: -0rpx;
+}
+
+
+/* 描述 */
+.payMethodLayout{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 40rpx;
+  background-color: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.payMethodTitle{
+  font:bold;
+  font-size: large;
+}
+
+.linearLayout{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.payMethodLayout image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.payMethodLayout .leftDesc{
+  margin-left: 8rpx;
+}
+
+.payMethodLayout icon{
+  margin-left: auto;
+}
+
+.payDesc{
+  color:red;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 底部 */
+.cart{
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .totalall{
+  flex: 1;
+  text-align: right;
+  margin-right: 20rpx;
+}
+.cart .totalall text{
+  font-size: 40rpx;
+  color: orange;
+}
+
+.totalallDesc{
+  font-size: 30rpx;
+  color: red;
+}
+
+.cart .cart-btn{
+  margin-right: 0;
+  width: 200rpx;
+  height: 100%;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 10vh;
+  color: white;
+  background-color: #23a3ff;
+}

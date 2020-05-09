@@ -113,6 +113,7 @@ Page({
     // })
   },
 
+  //计算总金额
   caculateCartTotal: function () {
     let that = this;
     let v = 0;
@@ -123,8 +124,16 @@ Page({
       v = v + item.goods.price * item.shopCarCount;
     }
     that.setData({
-      cartTotalPrice: v
+      cartTotalPrice: v.toFixed(1)
     });
-  }
+  },
+
+  //前往下单页面
+  onGotoPlaceOrder: function (e) {
+    wx.setStorageSync('place_order_list', this.data.productsArray);
+    wx.navigateTo({
+      url: '/pages/placeorder/placeorder',
+    })
+  },
 
 });

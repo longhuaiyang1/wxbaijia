@@ -41,7 +41,7 @@
         </view>
         <view class="totalallDesc">(以实际收货重量为准)</view>
       </view>
-      <view class="cart-btn" bindtap="finishedOrder">去下单</view>
+      <view class="cart-btn" bindtap="onGotoPlaceOrder">去下单</view>
     </view>
   </view>
 </view>
