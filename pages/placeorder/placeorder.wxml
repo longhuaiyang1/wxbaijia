@@ -1,6 +1,6 @@
 <view class="container">
   <view class="setReceiveInfo">
-    <view class="setReceiveShopBtn">+请选择提货门店</view>
+    <view class="setReceiveShopBtn" bindtap="setReceiverShop">+请选择提货门店</view>
     <view class="line"></view>
     <view class="myInfoItem">
       <text class="leftDesc">购买人</text>
@@ -41,7 +41,7 @@
       <icon class="icon-small" type="success" size="23"></icon>
     </view>
   </view>
-  <view class="payDesc">*实际付款按收货重量计算,与预估相差不大</view>
+  <view class="payDesc">实际付款按收货重量计算,与预估相差不大</view>
   <view class="cart">
     <view>
       <view class="totalall">

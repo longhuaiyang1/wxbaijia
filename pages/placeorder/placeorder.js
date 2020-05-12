@@ -50,4 +50,11 @@ Page({
     });
   },
 
+  //设置提货门店
+  setReceiverShop: function () {
+    wx.navigateTo({
+      url: '/pages/setReceiverShop/setReceiverShop',
+    })
+  },
+
 })

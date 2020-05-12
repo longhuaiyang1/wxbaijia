@@ -1,0 +1,15 @@
+<view class="container">
+  <view>请选择您小区对应的提货点</view>
+  <!-- 收货点列表 -->
+  <view class="list-bd">
+    <block wx:for="{{receivePoints}}" wx:key="index">
+      <view class="list-item" bindtap="onItemSelected" data-item="{{item}}">
+        <image class="img" src="{{item.headUrl}}" />
+        <view class="list-content">
+          <view>{{item.title}}</view>
+          <view>地址:{{item.detail}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
