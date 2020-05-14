@@ -1,0 +1,4 @@
+<view class="container">
+  <mp-icon type="field" icon="done2" color="black" size="{{50}}"></mp-icon>
+  <view class="successDesc">下单成功!</view>
+</view>

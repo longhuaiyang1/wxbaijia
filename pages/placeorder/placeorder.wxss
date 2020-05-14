@@ -52,7 +52,40 @@
   flex: 1;
 }
 
+/* 已设置门店提货组件的样式 */
+.list-bd{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100rpx;
+  margin-top: 20rpx;
+}
 
+.list-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60rpx;
+  align-items: center;
+  background-color: white;
+}
+.img{
+   width:200rpx;
+   height:200rpx;
+}
+
+.desc{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20rpx;
+}
 
 
 /* 中间列表 */

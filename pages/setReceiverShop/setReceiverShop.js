@@ -22,7 +22,6 @@ Page({
       that.setData({
         receivePoints: res
       })
-      that.caculateCartTotal();
     }, function (err) {
       console.log("err：", err);
       wx.showToast({
@@ -48,7 +47,20 @@ Page({
   /**
    * 选中某个地点
    */
-  onItemSelected: function () {
+  onItemSelected: function (e) {
+    console.log(e);
+    var $data = e.currentTarget.dataset;
 
+    var pages = getCurrentPages();   //当前页面
+    var prevPage = pages[pages.length - 2];   //上一页面
+    prevPage.setData({
+      //直接给上一个页面赋值
+      receivePoint: $data.item
+    });
+
+    wx.navigateBack({
+      //返回
+      delta: 1
+    })
   },
 })
