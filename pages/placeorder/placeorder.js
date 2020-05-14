@@ -107,6 +107,7 @@ Page({
       //上报数据
       $data = this.data;
       let params = {
+        token: wx.getStorageSync("token"),
         receivePoint: $data.receivePoint,
         receiverUserName: $data.receiverUserName,
         receiverUserPhone: $data.receiverUserPhone,

@@ -31,6 +31,11 @@ App({
               key: "session_key",
               data: res.session_key
             })
+
+            wx.setStorage({
+              key: "token",
+              data: res.token
+            })
           }
         }, function (err) {
           console.log("err：", header);
