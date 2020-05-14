@@ -25,6 +25,7 @@ Page({
       productsArray: list
     })
     this.caculateCartTotal();
+    this.getUserReceiveInfo();
   },
 
   /**
@@ -136,5 +137,33 @@ Page({
         })
       });
     }
+  },
+
+  /**
+   * 获取用户收货信息
+   */
+  getUserReceiveInfo: function () {
+    //上报数据
+    let $data = this.data;
+    let params = {
+      token: wx.getStorageSync("token"),
+    };
+    var that = this;
+    httpUtil.postRequest(getApp().data.serverUrl + "/getUserReceiveInfo", params, function (res) {
+      console.log("res：", res);
+      if (res.code >= 2000 & res.code < 3000) {
+        that.setData({
+          receivePoint: res.data.receivePoint,
+          receiverUserName: res.data.user.receiverName,
+          receiverUserPhone: res.data.user.receiverPhone,
+        })
+      } else {
+        wx.showToast({
+          title: res.msg,
+        })
+      }
+    }, function (err) {
+      console.log("err：", err);
+    });
   },
 })
