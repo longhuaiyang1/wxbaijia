@@ -6,6 +6,7 @@
     "pages/index/index",
     "pages/placeorder/placeorder",
     "pages/placeOrderSuccess/placeOrderSuccess",
+    "pages/orderUnpayList/orderUnpayList",
     "pages/logs/logs"
   ],
   "window": {

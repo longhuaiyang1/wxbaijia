@@ -17,7 +17,7 @@
       </view>
     </view>
     <view class="order-item-list">
-      <view class="order-item">
+      <view class="order-item" bindtap="onClickOrderUnpay">
         <image src="../../img/icon_order_wait_pay.png" />
         <text>待支付</text>
       </view>
