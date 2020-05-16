@@ -7,6 +7,9 @@
     "pages/placeorder/placeorder",
     "pages/placeOrderSuccess/placeOrderSuccess",
     "pages/orderUnpayList/orderUnpayList",
+    "pages/orderWaitReceiveList/orderWaitReceiveList",
+    "pages/orderFinishedList/orderFinishedList",
+    "pages/orderCancledList/orderCancledList",
     "pages/logs/logs"
   ],
   "window": {

@@ -19,4 +19,30 @@ Page({
     })
   },
 
+  /**
+  * 点击查看待收货订单
+  */
+  onClickOrderWaitReceive: function (e) {
+    wx.navigateTo({
+      url: '/pages/orderWaitReceiveList/orderWaitReceiveList',
+    })
+  },
+
+  /**
+   * 点击查看已完成订单
+   */
+  onClickOrderFinished: function (e) {
+    wx.navigateTo({
+      url: '/pages/orderFinishedList/orderFinishedList',
+    })
+  },
+
+  /**
+  * 点击查看已完成订单
+  */
+  onClickOrderCancled: function (e) {
+    wx.navigateTo({
+      url: '/pages/orderCancledList/orderCancledList',
+    })
+  },
 });

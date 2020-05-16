@@ -1,0 +1,26 @@
+<view class="container">
+  <!-- 商品列表 -->
+  <block wx:for="{{list}}" wx:key="i" wx:for-item="listItem">
+    <view class="products-list-bd">
+      <view class="timeLayout">
+        <text class="timeLayoutTextLeft">次日达</text>
+        <text class="timeLayoutTextRight">提货时间:{{receiveProductTime}}</text>
+      </view>
+      <view class="line1"></view>
+      <block wx:for="{{listItem.userOrderGoodsList}}" wx:key="j" wx:for-item="item">
+        <view class="product-item">
+          <image class="product-img" src="{{item.img}}" />
+          <view class="product-desc">
+            <text>{{item.title}}</text>
+            <view class="product-desc-bottom">
+              <text class="price">￥{{item.price}}/斤</text>
+              <view class="add-del-product">
+                <text>约 {{item.count}} 斤</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

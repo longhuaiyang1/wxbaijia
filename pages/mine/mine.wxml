@@ -21,15 +21,15 @@
         <image src="../../img/icon_order_wait_pay.png" />
         <text>待支付</text>
       </view>
-      <view class="order-item">
+      <view class="order-item" bindtap="onClickOrderWaitReceive">
         <image src="../../img/icon_order_wait_receive.png" />
         <text>待收货</text>
       </view>
-      <view class="order-item">
+      <view class="order-item" bindtap="onClickOrderFinished">
         <image src="../../img/icon_order_finish.png" />
         <text>已完成</text>
       </view>
-      <view class="order-item">
+      <view class="order-item" bindtap="onClickOrderCancled">
         <image src="../../img/icon_order_cancle.png" />
         <text>已取消</text>
       </view>

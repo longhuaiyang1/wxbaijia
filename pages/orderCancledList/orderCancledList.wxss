@@ -1,0 +1,150 @@
+
+/* 中间列表 */
+.products-list-bd{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 40rpx;
+}
+
+/* 商品收货时间 */
+.timeLayout{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeLayoutTextLeft{
+  padding-left:8rpx;
+  width: 160rpx;
+  font-size: larger;
+  font-weight: bold;
+}
+ 
+.timeLayoutTextRight{
+  margin-left: auto;
+  font-weight: bold;
+  padding-right: 8rpx;
+  color: gray;
+}
+
+.line1{
+  height: 2rpx;
+  background-color: lightgray;
+}
+
+.product-item{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 20rpx;
+  align-items: center;
+  background-color: white;
+}
+.product-img{
+   width:130rpx;
+   height: 130rpx;
+}
+
+.product-desc{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.price{
+  color: gray;
+}
+
+
+.product-desc-bottom{
+  width: 520rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.next-day{
+  color:red;
+  text-align: center;
+  
+  padding-bottom: 4rpx;
+  padding-top: 4rpx;
+  border-radius: 5rpx;
+  border-color: red;
+  border-width: 1rpx;
+  border-style: solid;
+  font-size: x-small;
+}
+
+
+.add-del-product{
+  display: flex;
+  flex-direction: row;
+   margin-left: auto;
+   position: relative;
+}
+
+.add-del-product image{
+  width: 60rpx; 
+  height: 60rpx; 
+  display: block
+}
+
+.add-del-product text{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.add-del-product mp-badge{
+  position: absolute;
+  top: -20rpx;
+  right: -0rpx;
+}
+
+
+/* 描述 */
+.payMethodLayout{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 40rpx;
+  background-color: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.payMethodTitle{
+  font:bold;
+  font-size: large;
+}
+
+.linearLayout{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.payMethodLayout image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.payMethodLayout .leftDesc{
+  margin-left: 8rpx;
+}
+
+.payMethodLayout icon{
+  margin-left: auto;
+}
+
+.payDesc{
+  color:red;
+  margin-left: auto;
+  margin-right: auto;
+}
