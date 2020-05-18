@@ -45,4 +45,22 @@ Page({
       url: '/pages/orderCancledList/orderCancledList',
     })
   },
+
+  /**
+* 点击设置收货地址
+*/
+  onClickSetReceiveAddress: function (e) {
+    wx.navigateTo({
+      url: '/pages/setReceiveAddress/setReceiveAddress',
+    })
+  },
+
+  /**
+   * 拨打客户电话
+   */
+  onCall: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '17761222067',
+    })
+  },
 });

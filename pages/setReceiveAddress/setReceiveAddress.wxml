@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="setReceiveInfo">
+    <view wx:if="{{receivePoint.length==0}}">
+      <view class="setReceiveShopBtn" bindtap="setReceiverShop">+请选择提货门店</view>
+    </view>
+    <view wx:else>
+      <view class="list-item" bindtap="setReceiverShop">
+        <image class="img" src="{{receivePoint.headUrl}}" />
+        <view class="list-content">
+          <view>{{receivePoint.title}}</view>
+          <view>地址:{{receivePoint.detail}}</view>
+        </view>
+        <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="myInfoItem">
+      <text class="leftDesc">购买人</text>
+      <input class="rightDetailInfo" maxlength="10" bindinput="bindReceiverUserNameInput" placeholder="请输入姓名" value="{{receiverUserName}}" />
+    </view>
+    <view class="myInfoItem">
+      <text class="leftDesc">手机号</text>
+      <input class="rightDetailInfo" maxlength="11" type="number" bindinput="bindReceiverUserPhoneInput" placeholder="请输入手机号" value="{{receiverUserPhone}}" />
+    </view>
+  </view>
+  <view class="cart">
+    <view class="cart-btn" bindtap="onUploadReceiveAddress">保存</view>
+  </view>
+</view>

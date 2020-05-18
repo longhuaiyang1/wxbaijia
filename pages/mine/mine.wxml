@@ -36,14 +36,14 @@
     </view>
   </view>
   <view class="card">
-    <view class="card-item">
+    <view class="card-item" bindtap="onClickSetReceiveAddress">
       <text>提货地址</text>
       <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
     </view>
     <view class="line"></view>
-    <view class="card-item">
-      <text>客服电话</text>
-      <view>18048576055</view>
+    <view class="card-item" bindtap="onCall">
+      <text>联系客服</text>
+      <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
     </view>
   </view>
   <view>

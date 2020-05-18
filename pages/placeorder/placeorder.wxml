@@ -10,6 +10,7 @@
           <view>{{receivePoint.title}}</view>
           <view>地址:{{receivePoint.detail}}</view>
         </view>
+        <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
       </view>
     </view>
     <view class="line"></view>
@@ -19,7 +20,7 @@
     </view>
     <view class="myInfoItem">
       <text class="leftDesc">手机号</text>
-      <input class="rightDetailInfo" maxlength="11" type="number" bindinput="bindReceiverUserPhoneInput"  placeholder="请输入手机号" value="{{receiverUserPhone}}" />
+      <input class="rightDetailInfo" maxlength="11" type="number" bindinput="bindReceiverUserPhoneInput" placeholder="请输入手机号" value="{{receiverUserPhone}}" />
     </view>
   </view>
   <!-- 商品列表 -->

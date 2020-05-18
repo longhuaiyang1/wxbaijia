@@ -10,6 +10,7 @@
     "pages/orderWaitReceiveList/orderWaitReceiveList",
     "pages/orderFinishedList/orderFinishedList",
     "pages/orderCancledList/orderCancledList",
+    "pages/setReceiveAddress/setReceiveAddress",
     "pages/logs/logs"
   ],
   "window": {
