@@ -97,3 +97,8 @@
 .card-item text{
   margin-right: auto;
 }
+
+.card-item image{
+  width: 80rpx;
+  height: 80rpx; 
+}

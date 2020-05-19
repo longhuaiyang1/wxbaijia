@@ -1,0 +1,12 @@
+.canvas{
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desc{
+  margin-top: 20rpx;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

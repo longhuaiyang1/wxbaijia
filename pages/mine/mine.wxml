@@ -45,8 +45,17 @@
       <text>联系客服</text>
       <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
     </view>
+    <view class="line"></view>
+    <view class="card-item" bindtap="onScanCode">
+      <text>扫码</text>
+      <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+    </view>
   </view>
-  <view>
-    <image src="" />
+  <view class="card">
+    <view class="card-item" bindtap="onClickQrCode">
+      <text>提货二维码</text>
+      <image src="../../img/icon_qrcode.png" />
+      <mp-icon type="field" icon="arrow" color="black" size="{{10}}"></mp-icon>
+    </view>
   </view>
 </view>

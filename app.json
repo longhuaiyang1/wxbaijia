@@ -11,6 +11,8 @@
     "pages/orderFinishedList/orderFinishedList",
     "pages/orderCancledList/orderCancledList",
     "pages/setReceiveAddress/setReceiveAddress",
+    "pages/qrCode/qrCode",
+    "pages/qrCodeReceiveList/qrCodeReceiveList",
     "pages/logs/logs"
   ],
   "window": {

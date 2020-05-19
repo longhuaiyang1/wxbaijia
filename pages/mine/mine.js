@@ -1,6 +1,11 @@
+
+
+
+
 //Page Object
 Page({
   data: {
+
   },
   //options(Object)
   onLoad: function (options) {
@@ -8,6 +13,7 @@ Page({
   onReady: function () {
   },
   onShow: function () {
+
   },
 
   /**
@@ -61,6 +67,30 @@ Page({
   onCall: function (e) {
     wx.makePhoneCall({
       phoneNumber: '17761222067',
+    })
+  },
+
+  onScanCode: function (e) {
+    // 只允许从相机扫码
+    wx.scanCode({
+      onlyFromCamera: true,
+      success (res) {
+        console.log(res)
+        wx.setStorageSync('receiverToken', res.result);
+        wx.navigateTo({
+          url: "/pages/qrCodeReceiveList/qrCodeReceiveList",
+        })
+       
+      }
+    })
+  },
+
+  /**
+   * 跳转到提货二维码页面 
+   */
+  onClickQrCode: function (e) {
+    wx.navigateTo({
+      url: '/pages/qrCode/qrCode',
     })
   },
 });

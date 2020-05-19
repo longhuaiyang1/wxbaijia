@@ -1,0 +1,4 @@
+<view class="container">
+  <canvas class='canvas' style="width:{{code_w}}px; height:{{code_w}}px;" canvas-id='canvas' bindlongtap='save'></canvas>
+  <view class="desc">提货时请出示此码</view>
+</view>

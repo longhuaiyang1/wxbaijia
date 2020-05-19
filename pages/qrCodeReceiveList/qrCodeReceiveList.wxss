@@ -1,0 +1,102 @@
+.container{
+  padding-bottom: 12vh;
+}
+
+/* 中间列表 */
+.products-list-bd{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 40rpx;
+}
+
+/* 商品收货时间 */
+.timeLayout{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeLayoutTextLeft{
+  padding-left:8rpx;
+  width: 160rpx;
+  font-size: larger;
+  font-weight: bold;
+}
+ 
+/* .timeLayoutTextRight{
+  margin-left: auto;
+  font-weight: bold;
+  padding-right: 8rpx;
+  color: gray;
+} */
+
+.line1{
+  height: 2rpx;
+  background-color: lightgray;
+}
+
+.product-item{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 20rpx;
+  align-items: center;
+  background-color: white;
+}
+.product-img{
+   width:130rpx;
+   height: 130rpx;
+}
+
+.product-desc{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.price{
+  color: gray;
+}
+
+
+.product-desc-bottom{
+  width: 520rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.add-del-product{
+  margin-left: auto;
+}
+
+/* 底部 */
+.cart{
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart .cart-btn{
+  margin-right: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 10vh;
+  color: white;
+  background-color: #23a3ff;
+}
