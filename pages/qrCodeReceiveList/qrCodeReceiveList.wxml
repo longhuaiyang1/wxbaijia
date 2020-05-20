@@ -22,7 +22,7 @@
       </block>
     </view>
   </block>
-  <view class="cart" hidden="{{list.length<=0}}">
+  <view class="cart" hidden="{{list.length<=0}}" bindtap="onFinishOrder">
     <view class="cart-btn" bindtap="onFinish">提货完成</view>
   </view>
 </view>
