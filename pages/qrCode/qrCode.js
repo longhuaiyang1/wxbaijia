@@ -11,10 +11,13 @@ Page({
   },
   //options(Object)
   onLoad: function (options) {
-    this.onGetQRCOde();
+   
   },
   onReady: function () {
-
+    var $that = this;
+    setTimeout(function () {
+      $that.onGetQRCOde();
+     }, 800) //延迟时间 这里是1秒
   },
   onShow: function () {
 
